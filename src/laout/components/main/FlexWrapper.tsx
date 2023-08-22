@@ -7,7 +7,7 @@ type FlexWrapperPropsType = {
   wrap?: string;
 };
 const FlexWrapper = styled.div<FlexWrapperPropsType>`
-  display: "flex";
+  display: flex;
   flex-direction: ${(props) => props.direction || "row"};
   justify-content: ${(props) => props.justify || "flex-start"};
   align-items: ${(props) => props.align || "stretch"};
