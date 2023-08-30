@@ -13,8 +13,8 @@ function Main() {
             Freelance UI designer, Fullstack developer, & Data Miner. I create
             seamless web experiences for end-users.
           </AboutMe>
-          <LeftBtn className="color-white">About me</LeftBtn>
-          <RigthtBtn className="color-white">Projects</RigthtBtn>
+          <LeftA className="color-white">About me</LeftA>
+          <RigthtA className="color-white">Projects</RigthtA>
         </About>
 
         <Circle>
@@ -51,7 +51,7 @@ const MyPhoto = styled.img`
   align-items: baseline;
   display: flex;
 `;
-const LeftBtn = styled.button`
+const LeftA = styled.a`
   border-radius: 8px;
   background: #7562e0;
   display: inline-flex;
@@ -59,7 +59,7 @@ const LeftBtn = styled.button`
   align-items: center;
   justify-content: center;
 `;
-const RigthtBtn = styled.button`
+const RigthtA = styled.a`
   border-color: #7562e0;
   border-radius: 8px;
   background: #1a1a29;
@@ -80,7 +80,7 @@ const Circle = styled.div`
 const Line = styled.div`
   background: #181824;
   width: 100vw;
-  height: 128px;
+  min-height: 128px;
   flex-shrink: 0;
 `;
 export default Main;

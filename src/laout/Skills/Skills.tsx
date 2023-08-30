@@ -1,96 +1,55 @@
 import styled from "styled-components";
-import FlexWrapper from "../components/main/FlexWrapper"
+// import FlexWrapper from "../components/main/FlexWrapper";
+import SkillBox from "./skillsBox/SkillsBox";
 
 function Skills() {
   return (
-    <SkillsBox>
-      <h1 className="primary-colour">The services i offer:</h1>
-      <FlexWrapper justify={"center"}>
-      <SkillsBoxPrimary>
-        <h1 className="color-white">UI & UX DESIGNING</h1>
-        <p>I design beautiful web iterfaces with Figma and Adove XD</p>
-      </SkillsBoxPrimary>
-      <SkillsBoxWhite>
-        <h1 className="primary-colour">WEB DEVELOPMENT</h1>
-        <p>
-          I create beautiful iterfaces with simple HTML, CSS, & JavaScript and
-          also frameworks like Angular and ReactJS
-        </p>
-      </SkillsBoxWhite>
-      <SkillsBoxPrimary>
-        <h1 className="color-white">MOBILE DEVELOPMENT</h1>
-        <p>
-          I am an expert mobile developer. I have experience using Flutter and
-          React Native.
-        </p>
-      </SkillsBoxPrimary>
-      <SkillsBoxWhite>
-        <h1 className="primary-colour">VERSION CONTROL</h1>
-        <p>
-          I can use version control systems well, and Git & Mecurial are my
-          go-to tool.
-        </p>
-      </SkillsBoxWhite>
-      <SkillsBoxPrimary>
-        <h1 className="color-white">NPM AND NODEJS</h1>
-        <p>
-          I have core understanding of NPM. I can also develop general purpose
-          applications with NodeJS
-        </p>
-      </SkillsBoxPrimary>
-      <SkillsBoxWhite>
-        <h1 className="primary-colour">WEB SCRAPING</h1>
-        <p>
-          I can collect content and data from the internet then manipulate and
-          analyze as needed.
-        </p>
-      </SkillsBoxWhite>
-      </FlexWrapper>
-      
-    </SkillsBox>
+   
+    <SkillsStyle>
+      <HeaderStyle className="primary-colour">
+        The services i offer:
+      </HeaderStyle>
+      <SkillBox></SkillBox>
+      {/* <FlexWrapper wrap="wrap" justify="center">
+        <SkillBox
+          iconId="pen"
+          titel="UI & UX DESIGNING"
+          text="I design beautiful web iterfaces with Figma and Adove XD"
+        />
+        <SkillBox
+          iconId="code"
+          titel="WEB DEVELOPMENT"
+          text="I create beautiful iterfaces with simple HTML, CSS, & JavaScript and also frameworks like Angular and ReactJS"
+        />
+        <SkillBox
+          iconId="android"
+          titel="MOBILE DEVELOPMENT"
+          text="I am an expert mobile developer. I have experience using Flutter and React Native."
+        />
+        <SkillBox
+          iconId="git-repo"
+          titel="VERSION CONTROL"
+          text="I can use version control systems well, and Git & Mecurial are my go-to tool."
+        />
+        <SkillBox
+          iconId="javaScript"
+          titel="NPM AND NODEJS"
+          text="I have core understanding of NPM. I can also develop general purpose applications with NodeJS"
+        />
+        <SkillBox
+          iconId="slider"
+          titel="WEB SCRAPING"
+          text="I can collect content and data from the internet then manipulate and analyze as needed."
+        />
+      </FlexWrapper> */}
+    </SkillsStyle>
   );
 }
-
-const SkillsBoxPrimary = styled.div`
-width: 256px;
-height: 254px;
-
-background: #1A1A29;
-box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2);
-display: inline-block;
-margin: 10px;
-display: flex;
-justify-content: center;
-flex-wrap: wrap;
-align-content: center;
-align-items: center;
-border-radius: 16px;
-border: 3px solid #7562E0;
-box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.20);
+const SkillsStyle = styled.section`
+  min-height: 1000px;
+`;
+const HeaderStyle = styled.h2``;
 
 
-}
-`
-const SkillsBoxWhite = styled.div`
-width: 256px;
-height: 254px;
 
-background: #1A1A29;
-box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2);
-display: inline-block;
-margin: 10px;
-display: flex;
-justify-content: center;
-flex-wrap: wrap;
-align-content: center;
-align-items: center;
-border-radius: 16px;
-border: 3px solid #F5F5F5;
-box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.20);
-
-
-`
-const SkillsBox = styled.div`
-
-`
 export default Skills;
