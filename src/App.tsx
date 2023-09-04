@@ -4,7 +4,7 @@ import Main from './laout/main/Main';
 import About from './laout/about/About';
 import Skills from './laout/Skills/Skills';
 import Projects from './laout/myprojects/Projects';
-import Contact from './laout/contact/Contact';
+import Footer from './laout/footer/Footer';
 
 function App() {
     return (
@@ -14,7 +14,7 @@ function App() {
         <About />
         <Skills />
         <Projects />
-        <Contact />
+        <Footer />
         </div>
     );
 }
