@@ -3,7 +3,7 @@ import Menu from "./menu/Menu";
 function Header() {
   return (
     <StyleMenu className="main">
-      {/* <Logo>Jayjay Dinero</Logo> */}
+      <Logo>Jayjay Dinero</Logo>
       <Menu />
     </StyleMenu>
   );
@@ -11,11 +11,14 @@ function Header() {
 const StyleMenu = styled.div`
   background-color: white;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-around;
+  min-height: 40px;
+  gap: 394px;
+
 `;
 
-// const Logo = styled.span`
-// display: flex;
+const Logo = styled.span`
+display: flex;
 
 // `
 export default Header;

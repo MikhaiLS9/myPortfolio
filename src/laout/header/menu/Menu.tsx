@@ -4,9 +4,7 @@ function Menu() {
   return (
     <StyleMenu>
       <Style>
-        <li>
-          <a href="/name">Jayjay Dinero</a>
-        </li>
+       
         <li>
           <a href="/home ">Home</a>
         </li>

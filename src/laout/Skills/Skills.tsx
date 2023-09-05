@@ -46,7 +46,8 @@ function Skills() {
   );
 }
 const SkillsStyle = styled.section`
-  min-height: 1000px;
+  min-height: 860px;
+  min-width: 1066px;
 `;
 const HeaderStyle = styled.h2``;
 

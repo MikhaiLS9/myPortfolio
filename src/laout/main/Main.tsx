@@ -21,7 +21,7 @@ function Main() {
           <MyPhoto src={photo} alt="myphoto" />
         </Circle>
       </FlexWrapper>
-      <Line></Line>
+      <Line />
     </Home>
   );
 }
@@ -79,7 +79,6 @@ const Circle = styled.div`
 
 const Line = styled.div`
   background: #181824;
-  width: 100vw;
   min-height: 128px;
   flex-shrink: 0;
 `;
