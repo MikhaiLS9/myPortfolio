@@ -6,7 +6,7 @@ function Skills() {
   return (
    
     <SkillsStyle>
-      <HeaderStyle className="primary-colour">
+      <HeaderStyle>
         The services i offer:
       </HeaderStyle>
       <SkillBox></SkillBox>

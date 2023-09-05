@@ -5,18 +5,19 @@ import FlexWrapper from "../components/main/FlexWrapper";
 function Main() {
   return (
     <Home>
-      <FlexWrapper align={"center"} justify={"space-around"}>
+      <FlexWrapper align={"center"} justify={"center"}>
         <About>
-          <h2 className="color-white">Hello, i’m</h2>
-          <h1 className="color-white">Jayjay D. Dinero</h1>
-          <AboutMe className="color-white">
+          <h2>Hello, i’m</h2>
+          <h1>Jayjay D. Dinero</h1>
+          <AboutMe>
             Freelance UI designer, Fullstack developer, & Data Miner. I create
             seamless web experiences for end-users.
           </AboutMe>
-          <LeftA className="color-white">About me</LeftA>
-          <RigthtA className="color-white">Projects</RigthtA>
+          <StyleLink>
+          <Link>About me</Link>
+          <Link>Projects</Link>
+          </StyleLink>
         </About>
-
         <Circle>
           <MyPhoto src={photo} alt="myphoto" />
         </Circle>
@@ -25,24 +26,21 @@ function Main() {
     </Home>
   );
 }
-const Home = styled.div``;
+const Home = styled.div`
+  background-color: #dcdcdc;
+`;
 
 const About = styled.div`
-  width: 340px;
-  height: 272px;
-  gap: 10px;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  flex-direction: row;
+  flex-direction: column;
 `;
 
-const AboutMe = styled.p`
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-`;
+const AboutMe = styled.p``;
+
+const StyleLink = styled.div`
+display: flex;
+gap: 20px;
+`
 
 const MyPhoto = styled.img`
   width: 444px;
@@ -51,22 +49,10 @@ const MyPhoto = styled.img`
   align-items: baseline;
   display: flex;
 `;
-const LeftA = styled.a`
-  border-radius: 8px;
-  background: #7562e0;
-  display: inline-flex;
-  width: 100px;
-  align-items: center;
-  justify-content: center;
-`;
-const RigthtA = styled.a`
-  border-color: #7562e0;
-  border-radius: 8px;
-  background: #1a1a29;
-  display: inline-flex;
-  width: 100px;
-  align-items: center;
-  justify-content: center;
+const Link = styled.a`
+  border: solid;
+  border-radius: 10px;
+  max-width: 100px;
 `;
 
 const Circle = styled.div`
@@ -80,6 +66,5 @@ const Circle = styled.div`
 const Line = styled.div`
   background: #181824;
   min-height: 128px;
-  flex-shrink: 0;
 `;
 export default Main;

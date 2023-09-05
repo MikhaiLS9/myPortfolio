@@ -74,8 +74,8 @@ justify-content: center;
 gap: 20px;
 `;
 const GridItems = styled.div`
-  background: #1a1a29;
-  border: 3px solid #7562e0;
+  background: #808080;
+  border: 3px solid black;
 `;
 
 // const BoxStyle = styled.div`

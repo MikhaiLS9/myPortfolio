@@ -9,7 +9,7 @@ function Header() {
   );
 }
 const StyleMenu = styled.div`
-  background-color: white;
+  background-color: #FFFAFA;
   display: flex;
   justify-content: space-around;
   min-height: 40px;
@@ -18,7 +18,5 @@ const StyleMenu = styled.div`
 `;
 
 const Logo = styled.span`
-display: flex;
-
-// `
+ `
 export default Header;
