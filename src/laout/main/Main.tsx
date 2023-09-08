@@ -26,7 +26,7 @@ function Main() {
     </Home>
   );
 }
-const Home = styled.div`
+const Home = styled.section`
   background-color: #dcdcdc;
 `;
 

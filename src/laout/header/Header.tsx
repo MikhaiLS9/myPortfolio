@@ -8,7 +8,7 @@ function Header() {
     </StyleMenu>
   );
 }
-const StyleMenu = styled.div`
+const StyleMenu = styled.header`
   background-color: #FFFAFA;
   display: flex;
   justify-content: space-around;

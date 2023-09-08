@@ -1,4 +1,3 @@
-import FlexWrapper from "../components/main/FlexWrapper"
 import styled from "styled-components"
 import Contact from "./contact/Contact"
 
@@ -18,7 +17,7 @@ const Titel = styled.h2``
 const Text = styled.p`
 
 `
-const StyleContact = styled.div`
+const StyleContact = styled.footer`
 min-height: 70vh;
 justify-content: space-evenly;
 display: flex;

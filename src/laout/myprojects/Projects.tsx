@@ -6,7 +6,7 @@ import styled from "styled-components";
 
 function Projects() {
   return (
-    <div>
+    <section>
       <TitleStyle>Featured projects:</TitleStyle>
       <TextStyle>
         I have worked on many projects over the course of being a Web Developer,
@@ -17,7 +17,7 @@ function Projects() {
         <Work src={stream} title={"LIVENTS"} text="A video streaming app with live Geolocation, for streaming events."></Work>
         <Work src={car} title={"MOOVE"} text="Mobile app for booking instant pickup & dropoff accross major cities."></Work>
       </StyleProject>
-    </div>
+    </section>
   );
 }
 const StyleProject = styled.div`
