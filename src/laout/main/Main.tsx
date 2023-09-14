@@ -1,41 +1,55 @@
 import styled from "styled-components";
 import photo from "../components/main/photo.png";
 import FlexWrapper from "../components/main/FlexWrapper";
+import Container from "../components/container/Container";
+import Theme from "../../styles/Theme";
+import User from '../components/image/vuesax/bold/vuesax/bold/user.svg'
+import Eye from '../components/image/vuesax/bold/vuesax/bold/eye.svg'
+import SectionHeader from "../../styles/SectionHeader";
+import Text from "../../styles/SectionText";
 
 function Main() {
   return (
     <Home>
+      <Container>
       <FlexWrapper align={"center"} justify={"center"}>
         <About>
-          <h2>Hello, i’m</h2>
-          <h1>Jayjay D. Dinero</h1>
-          <AboutMe>
+          <SectionHeader>Hello, i’m</SectionHeader>
+          <MyName>Jayjay D. Dinero</MyName>
+          <Text>
             Freelance UI designer, Fullstack developer, & Data Miner. I create
             seamless web experiences for end-users.
-          </AboutMe>
+          </Text>
           <StyleLink>
-          <Link>About me</Link>
-          <Link>Projects</Link>
+          <LinkA>About me <img src={User} alt="User" /></LinkA>
+          <LinkB>Projects <img src={Eye} alt="User" /></LinkB>
           </StyleLink>
         </About>
         <Circle>
           <MyPhoto src={photo} alt="myphoto" />
         </Circle>
       </FlexWrapper>
+      </Container>
+      
       <Line />
     </Home>
   );
 }
+
+const MyName = styled.h1`
+font-weight: 600;
+font-size: 52px;
+`
+
 const Home = styled.section`
-  background-color: #dcdcdc;
+  dispay: flex;
+  color: ${Theme.color.fonst};
 `;
 
 const About = styled.div`
   display: flex;
   flex-direction: column;
 `;
-
-const AboutMe = styled.p``;
 
 const StyleLink = styled.div`
 display: flex;
@@ -49,18 +63,24 @@ const MyPhoto = styled.img`
   align-items: baseline;
   display: flex;
 `;
-const Link = styled.a`
-  border: solid;
+const LinkA = styled.a`
   border-radius: 10px;
   max-width: 100px;
+  background: ${Theme.color.accent};
+`;
+
+const LinkB = styled.a`
+  border: solid ${Theme.color.accent};
+  border-radius: 10px;
+  max-width: 100px;
+  font-size: 16px;
 `;
 
 const Circle = styled.div`
   width: 486px;
   height: 430px;
   border-radius: 486px;
-  background: #7562e0;
-  position: "relative";
+  background: ${Theme.color.accent};
 `;
 
 const Line = styled.div`

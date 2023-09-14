@@ -1,10 +1,10 @@
 import styled from "styled-components";
+import Theme from "../../../styles/Theme";
 
 function Menu() {
   return (
     <StyleMenu>
       <Style>
-       
         <li>
           <a href="/home ">Home</a>
         </li>
@@ -21,13 +21,27 @@ function Menu() {
     </StyleMenu>
   );
 }
-const StyleMenu = styled.nav`
-  display: flex;
-  gap: 30px;
-`;
+const StyleMenu = styled.nav``;
 const Style = styled.ul`
-display: flex;
-gap: 30px;
+  display: flex;
+  min-width: 450px;
+  justify-content: space-between;
+  align-items: center;
 
-`
+  
+  a {
+    font-size: 18px;
+    font-weight: 600;
+  }
+  a:link {
+    color: color : ${Theme.color.fonst};
+   }
+ 
+  a:visited {
+    color: ${Theme.color.accent};
+  }
+  a:active {
+    color: ${Theme.color.accent};
+  }
+`;
 export default Menu;

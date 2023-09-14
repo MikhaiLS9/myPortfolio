@@ -17,14 +17,16 @@ function Header() {
   );
 }
 const StyleMenu = styled.header`
-  background-color: #fffafa;
-  display: flex;
-  justify-content: space-around;
-  min-height: 40px;
-  gap: 394px;
+color : ${Theme.color.primaryBg};
+display: flex;
+padding: 19px 160px;
+align-items: flex-start;
+gap: 394px;
 `;
 
 const Logo = styled.span`
-color : ${Theme.color.accent}
+color : ${Theme.color.accent};
+font-size: 28px;
+font-weight: 600;
 `;
 export default Header;
