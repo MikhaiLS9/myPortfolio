@@ -34,7 +34,7 @@ const Style = styled.ul`
     font-weight: 600;
   }
   a:link {
-    color: color : ${Theme.color.fonst};
+    color: ${Theme.color.fonst};
    }
  
   a:visited {
