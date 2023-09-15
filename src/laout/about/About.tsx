@@ -22,12 +22,12 @@ function About() {
       <StyleText>Years of experience. Specialised in building apps, while ensuring a seamless web experience for end users.</StyleText>
       </FlexWrapper>
      
-      <StyledBox>
+      <FlexWrapper wrap="wrap">
         <SkillsBox iconId="pen" title="UI & UX DESIGNING"/>
         <SkillsBox iconId="code" title="WEB DEVELOPMENT"/>
         <SkillsBox iconId="android" title="MOBILE DEVELOPMENT"/>
         <SkillsBox iconId="python"  title="WEB SCRAPING WITH PYTHON"/>
-      </StyledBox>
+      </FlexWrapper>
       </Container>
      
     </SectionAbout>
@@ -35,9 +35,6 @@ function About() {
   );
 }
 
-const StyledBox = styled.div`
-display: flex;
-`
 const SectionAbout = styled.section`
 h2{
   color: ${Theme.color.accent};

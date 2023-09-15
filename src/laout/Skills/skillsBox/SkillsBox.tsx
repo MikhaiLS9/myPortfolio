@@ -1,8 +1,8 @@
 import styled from "styled-components";
 import Icon from "../../components/icon/Icon";
+import Sms from '../../components/image/vuesax/outline/vuesax/outline/ruler&pen.svg'
 
 // type SkillBoxPropsType = {
-//   iconId: string;
 //   titel: string;
 //   text: string;
 // };
@@ -17,7 +17,8 @@ function SkillBox() {
 
     <GridConteiner>
       <GridItems>
-        <Icon iconId={"pen"} />
+        <img src={Sms} alt="ss" />
+        {/* <Icon iconId={"pen"} /> */}
         <TitleStyle>UI & UX DESIGNING</TitleStyle>
         <Text>I design beautiful web iterfaces with Figma and Adove XD</Text>
       </GridItems>

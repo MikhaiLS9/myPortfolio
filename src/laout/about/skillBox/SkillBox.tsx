@@ -1,24 +1,28 @@
 import styled from "styled-components";
 import Icon from "../../components/icon/Icon";
+import FlexWrapper from "../../components/main/FlexWrapper";
 
 type SkillBoxPropsType = {
   title: string;
-  iconId: string
+  iconId: string;
 };
 
 function SkillsBox(props: SkillBoxPropsType) {
   return (
     <StyledBox>
+      <FlexWrapper>
         <Icon iconId={props.iconId} />
-      <SkiledTitel>{props.title}</SkiledTitel>
+        <SkiledTitel>{props.title}</SkiledTitel>
+      </FlexWrapper>
     </StyledBox>
   );
 }
 const StyledBox = styled.div`
-  min-width: 256px;
-  min-height: 254px;
+  max-width: 256px;
+  height: 254px;
+  width: 100%;
   background: #bdbdbd;
-  margin: 10px
+  margin: 10px;
 `;
 const SkiledTitel = styled.h3``;
 export default SkillsBox;
