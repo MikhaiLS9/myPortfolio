@@ -22,8 +22,8 @@ function About() {
       <StyleText>Years of experience. Specialised in building apps, while ensuring a seamless web experience for end users.</StyleText>
       </FlexWrapper>
      
-      <FlexWrapper wrap="wrap">
-        <SkillsBox iconId="pen" title="UI & UX DESIGNING"/>
+      <FlexWrapper wrap="wrap" justify="space-around">
+        <SkillsBox iconId= "pen" title="UI & UX DESIGNING"/>
         <SkillsBox iconId="code" title="WEB DEVELOPMENT"/>
         <SkillsBox iconId="android" title="MOBILE DEVELOPMENT"/>
         <SkillsBox iconId="python"  title="WEB SCRAPING WITH PYTHON"/>
@@ -39,6 +39,7 @@ const SectionAbout = styled.section`
 h2{
   color: ${Theme.color.accent};
 }
+
   min-hight: 100wh;
 `;
 const SectionTitel = styled.h2`
@@ -53,6 +54,4 @@ display: inline-block;
 font-size: 24px;
 font-weight: 500;
 `
-
-
 export default About;

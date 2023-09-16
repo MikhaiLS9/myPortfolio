@@ -1,56 +1,25 @@
 import styled from "styled-components";
 // import FlexWrapper from "../components/main/FlexWrapper";
 import SkillBox from "./skillsBox/SkillsBox";
+import Container from "../components/container/Container";
+import SectionHeader from "../../styles/SectionHeader";
+import Theme from "../../styles/Theme";
 
 function Skills() {
   return (
-   
-    <SkillsStyle>
-      <HeaderStyle>
-        The services i offer:
-      </HeaderStyle>
-      <SkillBox></SkillBox>
-      {/* <FlexWrapper wrap="wrap" justify="center">
-        <SkillBox
-          iconId="pen"
-          titel="UI & UX DESIGNING"
-          text="I design beautiful web iterfaces with Figma and Adove XD"
-        />
-        <SkillBox
-          iconId="code"
-          titel="WEB DEVELOPMENT"
-          text="I create beautiful iterfaces with simple HTML, CSS, & JavaScript and also frameworks like Angular and ReactJS"
-        />
-        <SkillBox
-          iconId="android"
-          titel="MOBILE DEVELOPMENT"
-          text="I am an expert mobile developer. I have experience using Flutter and React Native."
-        />
-        <SkillBox
-          iconId="git-repo"
-          titel="VERSION CONTROL"
-          text="I can use version control systems well, and Git & Mecurial are my go-to tool."
-        />
-        <SkillBox
-          iconId="javaScript"
-          titel="NPM AND NODEJS"
-          text="I have core understanding of NPM. I can also develop general purpose applications with NodeJS"
-        />
-        <SkillBox
-          iconId="slider"
-          titel="WEB SCRAPING"
-          text="I can collect content and data from the internet then manipulate and analyze as needed."
-        />
-      </FlexWrapper> */}
-    </SkillsStyle>
+    <Container>
+      <SkillsStyle>
+        <SectionHeader>The services i offer:</SectionHeader>
+        <SkillBox></SkillBox>
+      </SkillsStyle>
+    </Container>
   );
 }
 const SkillsStyle = styled.section`
-  min-height: 860px;
-  min-width: 1066px;
+  h2:first-child {
+    color: ${Theme.color.accent};
+  }
+
 `;
-const HeaderStyle = styled.h2``;
-
-
 
 export default Skills;

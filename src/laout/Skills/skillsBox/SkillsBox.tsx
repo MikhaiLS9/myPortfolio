@@ -1,20 +1,10 @@
 import styled from "styled-components";
 import Icon from "../../components/icon/Icon";
-import Sms from '../../components/image/vuesax/outline/vuesax/outline/ruler&pen.svg'
-
-// type SkillBoxPropsType = {
-//   titel: string;
-//   text: string;
-// };
+import Sms from "../../components/image/vuesax/outline/vuesax/outline/ruler&pen.svg";
+import Theme from "../../../styles/Theme";
 
 function SkillBox() {
   return (
-    // <BoxStyle>
-    //   <Icon iconId={props.iconId} />
-    //   <TitleStyle>{props.titel}</TitleStyle>
-    //   <Text>{props.text}</Text>
-    // </BoxStyle>
-
     <GridConteiner>
       <GridItems>
         <img src={Sms} alt="ss" />
@@ -67,25 +57,20 @@ function SkillBox() {
 }
 
 const GridConteiner = styled.div`
-height: 100vh;
 display: grid;
 grid-template-columns: 341px 341px 341px;
 grid-template-rows repeat(2,338px);
 justify-content: center;
-gap: 20px;
+min-width: 1066px;
+min-height: 692px;
+gap: 17px;
 `;
 const GridItems = styled.div`
-  background: #808080;
-  border: 3px solid black;
+  background: ${Theme.color.primaryBg};
+  border: 3px solid white;
+  border-radius: 16px;
 `;
-
-// const BoxStyle = styled.div`
-//   border-radius: 16px;
-//   border: 3px solid var(--primary-colour, #7562e0);
-//   width: 339px;
-//   height: 338px;
-//   margin: 10px;
-// `;
 const TitleStyle = styled.h2``;
 const Text = styled.p``;
+
 export default SkillBox;
