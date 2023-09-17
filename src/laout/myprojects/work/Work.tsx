@@ -15,10 +15,9 @@ function Works(props: StyledWorkTypeProps) {
       <Titel>{props.title} </Titel>
       <Text>{props.text}</Text>
       <StyleLink>
-      <LinkA href="#">View Live</LinkA>
-      <LinkB href="#">Github Repo</LinkB>
+        <Link href="#">View Live</Link>
+        <Link href="#">Github Repo</Link>
       </StyleLink>
-     
     </StyledWork>
   );
 }
@@ -42,27 +41,38 @@ const Titel = styled.h3`
   margin: 5px;
 `;
 const StyleLink = styled.div`
-display: flex;
-`
-const LinkA = styled.a`
-  background: ${Theme.color.accent};
-  color: ${Theme.color.fonst};
+  display: flex;
+  gap: 18px;
+`;
+const Link = styled.a`
+  :first-child {
+    background: ${Theme.color.accent};
+    color: ${Theme.color.fonst};
+    border-radius: 8px;
+
+    font-size: 16px;
+    font-weight: 600;
+
+    display: flex;
+    width: 145px;
+    height: 43px;
+    padding: 12px 25px;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+  }
+
   border-radius: 8px;
   border: 2px solid ${Theme.color.accent};
-  width: 145px;
-  height: 43px;
-  padding: 12px 25px;
-  gap: 6px;
-`;
+  color: ${Theme.color.fonst};
 
-const LinkB = styled.a`
+  display: flex;
   width: 144px;
   height: 43px;
   padding: 12px 34px;
+  justify-content: center;
+  align-items: center;
   gap: 5px;
-  border-radius: 8px;
-  border: 2px solid ${Theme.color.accent};
-  color: ${Theme.color.fonst};
 `;
 
 export default Works;
