@@ -57,6 +57,9 @@ function SkillBox() {
 }
 
 const GridConteiner = styled.div`
+div:nth-child(odd){
+  border: 3px solid ${Theme.color.accent};
+};
 display: grid;
 grid-template-columns: 341px 341px 341px;
 grid-template-rows repeat(2,338px);
