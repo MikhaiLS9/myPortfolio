@@ -4,24 +4,33 @@ import SectionHeader from "../../styles/SectionHeader";
 import Text from "../../styles/SectionText";
 import Container from "../components/container/Container";
 import Theme from "../../styles/Theme";
+import FlexWrapper from "../components/main/FlexWrapper";
 
 function Footer() {
   return (
     <StyleContact>
-      <div>
-        <SectionHeader>Connect with me:</SectionHeader>
-        <Text>Satisfied with me? Please contact me</Text>
-        </div>
+      <Container>
+      <FlexWrapper justify="space-around">
+        <StyleConnect>
+          <SectionHeader>Connect with me:</SectionHeader>
+          <Text>Satisfied with me? Please contact me</Text>
+        </StyleConnect>
         <Contact></Contact>
-      
+      </FlexWrapper>
+      </Container>
     </StyleContact>
   );
 }
 
+const StyleConnect = styled.div`
+  display: flex;
+  flex-direction: column;
+`;
+
 const StyleContact = styled.footer`
-h2{
-    color: ${Theme.color.accent}
-}
+  h2 {
+    color: ${Theme.color.accent};
+  }
   min-height: 70vh;
   justify-content: space-evenly;
   display: flex;
