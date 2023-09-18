@@ -34,6 +34,7 @@ h2{
 `
 const StyleProject = styled.div`
 display: flex;
+flex-wrap: wrap;
 justify-content: center;
 gap: 17px;
 margin: 17px auto;

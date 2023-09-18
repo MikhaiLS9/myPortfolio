@@ -1,19 +1,21 @@
 import styled from "styled-components";
 import Icon from "../../components/icon/Icon";
-import Sms from "../../components/image/vuesax/outline/vuesax/outline/ruler&pen.svg";
+import Pen from "../../components/image/vuesax/outline/vuesax/outline/ruler&pen.svg";
+import Code from "../../components/image/vuesax/code.svg";
 import Theme from "../../../styles/Theme";
 
 function SkillBox() {
   return (
     <GridConteiner>
       <GridItems>
-        <img src={Sms} alt="ss" />
+        <img src={Pen} alt="ss" />
         {/* <Icon iconId={"pen"} /> */}
         <TitleStyle>UI & UX DESIGNING</TitleStyle>
         <Text>I design beautiful web iterfaces with Figma and Adove XD</Text>
       </GridItems>
       <GridItems>
-        <Icon iconId={"code"} />
+        {/* <Icon iconId={"code"} /> */}
+        <img src={Code} alt="" />
         <TitleStyle>WEB DEVELOPMENT</TitleStyle>
         <Text>
           I create beautiful iterfaces with simple HTML, CSS, & JavaScript and
@@ -60,6 +62,7 @@ const GridConteiner = styled.div`
 div:nth-child(odd){
   border: 3px solid ${Theme.color.accent};
 };
+
 display: grid;
 grid-template-columns: 341px 341px 341px;
 grid-template-rows repeat(2,338px);
@@ -69,11 +72,32 @@ min-height: 692px;
 gap: 17px;
 `;
 const GridItems = styled.div`
+  :nth-child(even) {
+    color: ${Theme.color.accent};
+  }
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
   background: ${Theme.color.primaryBg};
   border: 3px solid white;
   border-radius: 16px;
 `;
-const TitleStyle = styled.h2``;
-const Text = styled.p``;
+
+const TitleStyle = styled.h2`
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 185%; /* 44.4px */
+`;
+const Text = styled.p`
+  text-align: center;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 32px; /* 188.235% */
+  color: ${Theme.color.fonst};
+`;
+console.log(TitleStyle);
 
 export default SkillBox;

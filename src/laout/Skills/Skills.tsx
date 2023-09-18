@@ -16,10 +16,11 @@ function Skills() {
   );
 }
 const SkillsStyle = styled.section`
-  h2:first-child {
-    color: ${Theme.color.accent};
-  }
-
+h2:first-child{
+  color: ${Theme.color.accent};
+}
 `;
+
+
 
 export default Skills;

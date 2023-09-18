@@ -30,8 +30,19 @@ const StyledWork = styled.div`
 `;
 
 const Image = styled.img`
-  width: 100%;
-  max-height: 154px;
+
+max-width: 338px;
+max-height: 173px;
+width: 100%;
+  border-radius: 8px;
+  background: linear-gradient(
+    180deg,
+    rgba(24, 24, 36, 0.25) 0%,
+    rgba(117, 98, 224, 0.5) 100%
+  );
+  background-blend-mode: multiply;
+  opacity: 0.4;
+  border: 2px solid ${Theme.color.accent};
 `;
 
 const Titel = styled.h3`
