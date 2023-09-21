@@ -64,12 +64,23 @@ div:nth-child(odd){
 };
 
 display: grid;
-grid-template-columns: 341px 341px 341px;
-grid-template-rows repeat(2,338px);
+// grid-template-columns: 341px 341px 341px;
+// grid-template-rows repeat(2,338px);
+// grid-template-columns: auto;
+grid-template-columns: 1fr;
+grid-template-rows: repeat(auto-fill, minmax(338px, 1fr));
+min-width: 100%;
 justify-content: center;
-min-width: 1066px;
+// min-width: 1066px;
 min-height: 692px;
 gap: 17px;
+
+@media (min-width: 768px) {
+  grid-template-columns: repeat(2, 1fr);
+}
+@media (min-width: 1024px) {
+  grid-template-columns: repeat(3, 1fr);
+}
 `;
 const GridItems = styled.div`
   :nth-child(even) {
