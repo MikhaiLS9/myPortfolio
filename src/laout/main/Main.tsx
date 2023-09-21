@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import photo from "../components/main/photo.png";
-import FlexWrapper from "../components/main/FlexWrapper";
+// import FlexWrapper from "../components/main/FlexWrapper";
 import Container from "../components/container/Container";
 import Theme from "../../styles/Theme";
 import User from "../components/image/vuesax/bold/vuesax/bold/user.svg";
@@ -12,7 +12,7 @@ function Main() {
   return (
     <Home>
       <Container>
-        <FlexWrapper align={"center"} justify={"center"}>
+        <StyledMain>
           <About>
             <SectionHeader>Hello, i’m</SectionHeader>
             <MyName>Jayjay D. Dinero</MyName>
@@ -32,13 +32,22 @@ function Main() {
           <Circle>
             <MyPhoto src={photo} alt="myphoto" />
           </Circle>
-        </FlexWrapper>
+        </StyledMain>
         <Line />
       </Container>
     </Home>
   );
 }
+const StyledMain = styled.div`
+  display: flex;
+  justify-content: center;
+  gap: 25px;
 
+  @media (max-width: 850px){
+    flex-wrap: wrap
+  }
+  
+`;
 const MyName = styled.h1`
   font-weight: 600;
   font-size: 52px;
@@ -96,7 +105,7 @@ const Link = styled.a`
 const Circle = styled.div`
   width: 486px;
   height: 430px;
-  border-radius: 486px;
+  border-radius: 100%;
   background: ${Theme.color.accent};
 `;
 

@@ -21,17 +21,28 @@ function Menu() {
     </StyleMenu>
   );
 }
-const StyleMenu = styled.nav``;
+const StyleMenu = styled.nav`
+display: flex;
+`;
 const Style = styled.ul`
   display: flex;
-  min-width: 450px;
+  max-width: 450px;
   justify-content: space-between;
-  align-items: center;
-
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 25px;
   
   a {
     font-size: 18px;
     font-weight: 600;
+
+    @media (max-width: 726px){
+      font-size: 15px;
+    }
+    
+    @media (max-width: 526px){
+      font-size: 12px;
+    }
   }
   a:link {
     color: ${Theme.color.fonst};
@@ -43,5 +54,9 @@ const Style = styled.ul`
   a:active {
     color: ${Theme.color.accent};
   }
+
+  // @amedia: ${Theme.media.tablet} {
+
+  // }
 `;
 export default Menu;
