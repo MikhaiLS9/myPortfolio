@@ -19,7 +19,7 @@ function About() {
       </Text>
       <FlexWrapper align="center">
       <SectionTitel>5+</SectionTitel>
-      <StyleText>Years of experience. Specialised in building apps, while ensuring a seamless web experience for end users.</StyleText>
+      <Text>Years of experience. Specialised in building apps, while ensuring a seamless web experience for end users.</Text>
       </FlexWrapper>
      
       <FlexWrapper wrap="wrap" justify="space-around">
@@ -47,11 +47,16 @@ font-size: 96px;
 font-weight: 600;
 display: inline-block;
 margin: 0px;
+
+@media (max-width: 726px)
+{
+    font-size: 60px;
+}
 `;
 
-const StyleText = styled.p`
-display: inline-block;
-font-size: 24px;
-font-weight: 500;
-`
+// const StyleText = styled.p`
+// display: inline-block;
+// font-size: 24px;
+// font-weight: 500;
+// `
 export default About;

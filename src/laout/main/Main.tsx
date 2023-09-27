@@ -43,14 +43,28 @@ const StyledMain = styled.div`
   justify-content: center;
   gap: 25px;
 
+
+
   @media (max-width: 850px){
-    flex-wrap: wrap
+    flex-wrap: wrap;
+    max-width: 850px;
+    margin-left: 10px;
   }
+  @media (max-width: 360px){
+    flex-wrap: wrap;
+    max-width: 300px;
+    padding: 10px;
+  }
+
   
 `;
 const MyName = styled.h1`
   font-weight: 600;
   font-size: 52px;
+
+   @media (max-width: 850px){
+   font-size: 32px;
+  }
 `;
 
 const Home = styled.section`
@@ -66,6 +80,13 @@ const About = styled.div`
 const StyleLink = styled.div`
   display: flex;
   gap: 20px;
+
+    @media (max-width: 360px){
+    max-width: 300px;
+    max-height: 70px;
+    padding: 5px 14px;
+    justify-content: flex-end;
+  }
 `;
 
 const MyPhoto = styled.img`
@@ -74,6 +95,13 @@ const MyPhoto = styled.img`
   flex-shrink: 0;
   align-items: baseline;
   display: flex;
+
+  @media (max-width: 450px){
+    flex-wrap: wrap;
+    max-width: 300px;
+    max-height: 300px;
+  }
+  
 `;
 const Link = styled.a`
   :first-child {
@@ -93,6 +121,8 @@ const Link = styled.a`
   border: solid ${Theme.color.accent};
   border-radius: 8px;
   font-size: 16px;
+
+
 `;
 
 // const LinkB = styled.a`
@@ -107,6 +137,12 @@ const Circle = styled.div`
   height: 430px;
   border-radius: 100%;
   background: ${Theme.color.accent};
+
+  @media (max-width: 450px){
+    flex-wrap: wrap;
+    max-width: 300px;
+    max-height: 300px;
+  }
 `;
 
 const Line = styled.div`
