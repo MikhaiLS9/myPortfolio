@@ -20,6 +20,12 @@ const SectionStyle = styled.section`
   display: flex;
   flex-direction: column;
   gap: 10px;
+
+  textarea {
+    width: 472px;
+    height: 98px;
+    resize: none;
+  }
 `;
 const Field = styled.input`
   width: 472px;
@@ -27,8 +33,20 @@ const Field = styled.input`
   border-radius: 8px;
   opacity: 0.11;
   background: #f5f5f5;
-`;
+  padding: 16px 19px;
 
+  color: ${Theme.color.primaryBg};
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+
+  @media (max-width: 726px){
+    max-width: 250px;
+  }
+
+`;
 
 const Button = styled.button`
   width: 174px;

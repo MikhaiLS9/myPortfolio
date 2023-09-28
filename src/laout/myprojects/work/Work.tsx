@@ -27,6 +27,11 @@ const StyledWork = styled.div`
   min-height: 415px;
   padding: 10px;
   background-color: #31313f;
+
+  @media (max-width: 360px){
+    max-width: 300px;
+    justify-content: flex-start;
+  }
 `;
 
 const Image = styled.img`
