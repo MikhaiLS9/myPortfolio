@@ -125,13 +125,6 @@ const Link = styled.a`
 
 `;
 
-// const LinkB = styled.a`
-//   border: solid ${Theme.color.accent};
-//   border-radius: 10px;
-//   max-width: 100px;
-//   font-size: 16px;
-// `;
-
 const Circle = styled.div`
   width: 486px;
   height: 430px;
