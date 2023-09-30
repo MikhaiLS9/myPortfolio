@@ -41,7 +41,7 @@ gap: 17px;
 margin: 17px auto;
 
 @media (max-width: 360px){
-  max-width: 300px;
+  max-width: 280px;
   // justify-content: flex-start;
 }
 `

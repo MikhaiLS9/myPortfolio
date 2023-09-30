@@ -42,17 +42,15 @@ const StyledMain = styled.div`
   display: flex;
   justify-content: center;
   gap: 25px;
+  width: 100%;
 
 
 
   @media (max-width: 850px){
     flex-wrap: wrap;
-    max-width: 850px;
-    margin-left: 10px;
   }
   @media (max-width: 360px){
     flex-wrap: wrap;
-    max-width: 300px;
     padding: 10px;
   }
 
@@ -75,6 +73,9 @@ const Home = styled.section`
 const About = styled.div`
   display: flex;
   flex-direction: column;
+  @media (max-width: 850px){
+  align-items: center;
+  }
 `;
 
 const StyleLink = styled.div`
@@ -82,7 +83,7 @@ const StyleLink = styled.div`
   gap: 20px;
 
     @media (max-width: 360px){
-    max-width: 300px;
+    max-width: 316px;
     max-height: 70px;
     padding: 5px 14px;
     justify-content: flex-end;

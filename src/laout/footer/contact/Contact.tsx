@@ -20,7 +20,8 @@ const SectionStyle = styled.section`
   display: flex;
   flex-direction: column;
   gap: 10px;
-
+  margin: 0 auto;
+  padding: 9px;
   textarea {
     width: 472px;
     height: 98px;

@@ -8,14 +8,15 @@ type SkillBoxPropsType = {
   iconId: string;
 };
 
+
 function SkillsBox(props: SkillBoxPropsType) {
   return (
     <StyledBox>
-      <FlexWrapper wrap="wrap" direction="column" justify="flex-end">
-        <Icon iconId={props.iconId} />
-        <SkiledTitel>{props.title}</SkiledTitel>
-      </FlexWrapper>
-    </StyledBox>
+    <FlexWrapper wrap="wrap" direction="column" justify="flex-end">
+      <Icon iconId={props.iconId} />
+      <SkiledTitel>{props.title}</SkiledTitel>
+    </FlexWrapper>
+  </StyledBox>
   );
 }
 const StyledBox = styled.div`
