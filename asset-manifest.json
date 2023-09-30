@@ -1,27 +1,30 @@
 {
   "files": {
     "main.css": "/myPortfolio/static/css/main.31d6cfe0.css",
-    "main.js": "/myPortfolio/static/js/main.8d859db4.js",
+    "main.js": "/myPortfolio/static/js/main.008a8c5a.js",
     "static/js/787.25eaef86.chunk.js": "/myPortfolio/static/js/787.25eaef86.chunk.js",
     "static/media/photo.png": "/myPortfolio/static/media/photo.d08ec9f54fc9299af3b6.png",
-    "static/media/icon-svg.svg": "/myPortfolio/static/media/icon-svg.f97a79eba62db099b7a482a2011d4512.svg",
+    "static/media/icon-svg.svg": "/myPortfolio/static/media/icon-svg.dd4d8ebac9b650866e58b814feaa5921.svg",
     "static/media/ruler&pen.svg": "/myPortfolio/static/media/ruler&pen.2e9cb57db5633e809bca4b74fc1df9ce.svg",
     "static/media/map.jpg": "/myPortfolio/static/media/map.be1b3a2cdf1f7d4cee46.jpg",
     "static/media/xz.jpg": "/myPortfolio/static/media/xz.8e994d2cb0f915999ea6.jpg",
     "static/media/car.jpg": "/myPortfolio/static/media/car.998b64a7a556d7dc09ca.jpg",
     "static/media/dribbble.svg": "/myPortfolio/static/media/dribbble.c8319cce5d38294da80abee0a104b463.svg",
+    "static/media/git-repo.svg": "/myPortfolio/static/media/git-repo.8244aa25c9eefc83345c26ea0df137e8.svg",
+    "static/media/android.svg": "/myPortfolio/static/media/android.bb5c1996bb3761fbe3f1957d4931e0f8.svg",
     "static/media/instagram.svg": "/myPortfolio/static/media/instagram.a70e15c7c0061a7d207de907617071ef.svg",
     "static/media/facebook.svg": "/myPortfolio/static/media/facebook.8312450909103b6be0ab5f7b26d9e3dc.svg",
-    "static/media/code.svg": "/myPortfolio/static/media/code.f173ca463864a6096091aae530a0311c.svg",
+    "static/media/code.svg": "/myPortfolio/static/media/code.089eab48834c1d2034f8a11cec65d6b7.svg",
     "index.html": "/myPortfolio/index.html",
     "static/media/eye.svg": "/myPortfolio/static/media/eye.2c819f0ad580da76ede68f45beb3afb8.svg",
+    "static/media/slider.svg": "/myPortfolio/static/media/slider.ce6bd846641b78c30fd2e8f0686ced92.svg",
     "static/media/sms.svg": "/myPortfolio/static/media/sms.ede97b804309a38bdb10c7adb79bbc64.svg",
     "static/media/user.svg": "/myPortfolio/static/media/user.6133f3a1aa7d64de055dfd6300977629.svg",
-    "main.8d859db4.js.map": "/myPortfolio/static/js/main.8d859db4.js.map",
+    "main.008a8c5a.js.map": "/myPortfolio/static/js/main.008a8c5a.js.map",
     "787.25eaef86.chunk.js.map": "/myPortfolio/static/js/787.25eaef86.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.31d6cfe0.css",
-    "static/js/main.8d859db4.js"
+    "static/js/main.008a8c5a.js"
   ]
 }
