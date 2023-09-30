@@ -5,10 +5,10 @@ import Text from "../../styles/SectionText";
 import Container from "../components/container/Container";
 import Theme from "../../styles/Theme";
 import FlexWrapper from "../components/main/FlexWrapper";
-import Sms from "../components/image/vuesax/bold/vuesax/bold/sms.svg";
-import Facebook from "../components/image/vuesax/bold/vuesax/bold/facebook.svg";
-import Instagram from "../components/image/vuesax/bold/vuesax/bold/instagram.svg";
-import Dribbble from "../components/image/vuesax/bold/vuesax/bold/dribbble.svg";
+import Sms from "../components/icon_svg/vuesax/vuesax/sms.svg";
+import Facebook from "../components/icon_svg/vuesax/vuesax/facebook.svg";
+import Instagram from "../components/icon_svg/vuesax/vuesax/instagram.svg";
+import Dribbble from "../components/icon_svg/vuesax/vuesax/dribbble.svg";
 
 function Footer() {
   return (

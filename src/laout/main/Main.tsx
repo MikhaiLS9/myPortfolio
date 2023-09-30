@@ -1,10 +1,9 @@
 import styled from "styled-components";
 import photo from "../components/main/photo.png";
-// import FlexWrapper from "../components/main/FlexWrapper";
 import Container from "../components/container/Container";
 import Theme from "../../styles/Theme";
-import User from "../components/image/vuesax/bold/vuesax/bold/user.svg";
-import Eye from "../components/image/vuesax/bold/vuesax/bold/eye.svg";
+import User from "../components/icon_svg/vuesax/bold/user.svg";
+import Eye from "../components/icon_svg/vuesax/bold/eye.svg";
 import SectionHeader from "../../styles/SectionHeader";
 import Text from "../../styles/SectionText";
 
@@ -44,24 +43,20 @@ const StyledMain = styled.div`
   gap: 25px;
   width: 100%;
 
-
-
-  @media (max-width: 850px){
+  @media (max-width: 850px) {
     flex-wrap: wrap;
   }
-  @media (max-width: 360px){
+  @media (max-width: 360px) {
     flex-wrap: wrap;
     padding: 10px;
   }
-
-  
 `;
 const MyName = styled.h1`
   font-weight: 600;
   font-size: 52px;
 
-   @media (max-width: 850px){
-   font-size: 32px;
+  @media (max-width: 850px) {
+    font-size: 32px;
   }
 `;
 
@@ -73,8 +68,8 @@ const Home = styled.section`
 const About = styled.div`
   display: flex;
   flex-direction: column;
-  @media (max-width: 850px){
-  align-items: center;
+  @media (max-width: 850px) {
+    align-items: center;
   }
 `;
 
@@ -82,7 +77,7 @@ const StyleLink = styled.div`
   display: flex;
   gap: 20px;
 
-    @media (max-width: 360px){
+  @media (max-width: 360px) {
     max-width: 316px;
     max-height: 70px;
     padding: 5px 14px;
@@ -97,12 +92,11 @@ const MyPhoto = styled.img`
   align-items: baseline;
   display: flex;
 
-  @media (max-width: 450px){
+  @media (max-width: 450px) {
     flex-wrap: wrap;
     max-width: 300px;
     max-height: 300px;
   }
-  
 `;
 const Link = styled.a`
   :first-child {
@@ -122,8 +116,6 @@ const Link = styled.a`
   border: solid ${Theme.color.accent};
   border-radius: 8px;
   font-size: 16px;
-
-
 `;
 
 const Circle = styled.div`
@@ -132,7 +124,7 @@ const Circle = styled.div`
   border-radius: 100%;
   background: ${Theme.color.accent};
 
-  @media (max-width: 450px){
+  @media (max-width: 450px) {
     flex-wrap: wrap;
     max-width: 300px;
     max-height: 300px;
