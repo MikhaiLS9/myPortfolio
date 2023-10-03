@@ -22,23 +22,29 @@ function Works(props: StyledWorkTypeProps) {
   );
 }
 const StyledWork = styled.div`
+  display: flex;
   max-width: 344px;
   width: 100%;
-  min-height: 415px;
+  min-height: 417px;
   padding: 10px;
   background-color: #31313f;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
 
-  @media (max-width: 360px){
+  @media (max-width: 360px) {
+    display: flex;
     max-width: 300px;
-    justify-content: flex-start;
+    justify-content: center;
+    align-content: space-around;
+    align-items: center;
   }
 `;
 
 const Image = styled.img`
-
-max-width: 338px;
-max-height: 173px;
-width: 100%;
+  max-width: 338px;
+  max-height: 173px;
+  width: 100%;
   border-radius: 8px;
   background: linear-gradient(
     180deg,
@@ -61,6 +67,22 @@ const StyleLink = styled.div`
   gap: 18px;
 `;
 const Link = styled.a`
+  display: flex;
+  width: 144px;
+  height: 43px;
+  padding: 12px 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+
+  box-sizing: border-box;
+  font-size: 16px;
+  font-weight: 600;
+
+  @media (max-width: 360px) {
+    max-width: 130px;
+  }
+
   :first-child {
     background: ${Theme.color.accent};
     color: ${Theme.color.fonst};
@@ -81,14 +103,6 @@ const Link = styled.a`
   border-radius: 8px;
   border: 2px solid ${Theme.color.accent};
   color: ${Theme.color.fonst};
-
-  display: flex;
-  width: 144px;
-  height: 43px;
-  padding: 12px 34px;
-  justify-content: center;
-  align-items: center;
-  gap: 5px;
 `;
 
 export default Works;

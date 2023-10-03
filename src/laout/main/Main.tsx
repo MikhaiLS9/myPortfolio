@@ -75,6 +75,7 @@ const About = styled.div`
 
 const StyleLink = styled.div`
   display: flex;
+  box-sizing: border-box;
   gap: 20px;
 
   @media (max-width: 360px) {
@@ -101,16 +102,18 @@ const MyPhoto = styled.img`
 const Link = styled.a`
   :first-child {
     display: inline-flex;
-    padding: 12px 34px;
+    padding: 12px 25px;
     align-items: flex-start;
+    align-items: center;
     gap: 5px;
 
     border-radius: 8px;
     background: ${Theme.color.accent};
   }
   display: inline-flex;
-  padding: 12px 34px;
+  padding: 12px 25px;
   align-items: flex-start;
+  align-items: center;
   gap: 5px;
 
   border: solid ${Theme.color.accent};
