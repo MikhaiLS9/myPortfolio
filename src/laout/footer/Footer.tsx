@@ -12,7 +12,7 @@ import Dribbble from "../components/icon_svg/vuesax/vuesax/dribbble.svg";
 
 function Footer() {
   return (
-    <StyleContact>
+    <StyleContact id="contact"> 
       <Container>
         <FlexWrapper justify="space-around">
           <StyleConnect>

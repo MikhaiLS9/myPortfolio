@@ -12,8 +12,8 @@ const FlexWrapper = styled.div<FlexWrapperPropsType>`
   justify-content: ${(props) => props.justify || "flex-start"};
   align-items: ${(props) => props.align || "stretch"};
   flex-wrap: ${(props) => props.wrap || "nowrap"};
-
-  @media (max-width: 780px){
+  height: 100%;
+  @media (max-width: 780px) {
     flex-direction: column;
   }
 `;

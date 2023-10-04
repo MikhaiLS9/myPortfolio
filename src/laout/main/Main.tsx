@@ -6,12 +6,13 @@ import User from "../components/icon_svg/vuesax/bold/user.svg";
 import Eye from "../components/icon_svg/vuesax/bold/eye.svg";
 import SectionHeader from "../../styles/SectionHeader";
 import Text from "../../styles/SectionText";
+import FlexWrapper from "../components/main/FlexWrapper";
 
 function Main() {
   return (
-    <Home>
+    <StyledMain id="main">
       <Container>
-        <StyledMain>
+        <FlexWrapper justify="center" align="center">
           <About>
             <SectionHeader>Hello, i’m</SectionHeader>
             <MyName>Jayjay D. Dinero</MyName>
@@ -31,10 +32,11 @@ function Main() {
           <Circle>
             <MyPhoto src={photo} alt="myphoto" />
           </Circle>
-        </StyledMain>
+          <Line />
+        </FlexWrapper>
         <Line />
       </Container>
-    </Home>
+    </StyledMain>
   );
 }
 const StyledMain = styled.div`
@@ -42,13 +44,10 @@ const StyledMain = styled.div`
   justify-content: center;
   gap: 25px;
   width: 100%;
+  max-width: 100%;
 
   @media (max-width: 850px) {
     flex-wrap: wrap;
-  }
-  @media (max-width: 360px) {
-    flex-wrap: wrap;
-    padding: 10px;
   }
 `;
 const MyName = styled.h1`
@@ -58,11 +57,6 @@ const MyName = styled.h1`
   @media (max-width: 850px) {
     font-size: 32px;
   }
-`;
-
-const Home = styled.section`
-  dispay: flex;
-  color: ${Theme.color.fonst};
 `;
 
 const About = styled.div`
@@ -75,7 +69,7 @@ const About = styled.div`
 
 const StyleLink = styled.div`
   display: flex;
-  box-sizing: border-box;
+  box-sizing: border;
   gap: 20px;
 
   @media (max-width: 360px) {
@@ -85,7 +79,6 @@ const StyleLink = styled.div`
     justify-content: flex-end;
   }
 `;
-
 const MyPhoto = styled.img`
   width: 444px;
   height: 430px;
@@ -99,6 +92,7 @@ const MyPhoto = styled.img`
     max-height: 300px;
   }
 `;
+
 const Link = styled.a`
   :first-child {
     display: inline-flex;
@@ -115,6 +109,7 @@ const Link = styled.a`
   align-items: flex-start;
   align-items: center;
   gap: 5px;
+  cursor: pointer;
 
   border: solid ${Theme.color.accent};
   border-radius: 8px;
@@ -139,5 +134,10 @@ const Line = styled.div`
   min-height: 128px;
   max-width: 100%;
   margin: 0 auto;
+
+  @media (max-width: 850px) {
+    display: none;
+  }
 `;
+
 export default Main;

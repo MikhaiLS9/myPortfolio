@@ -7,7 +7,7 @@ import Theme from "../../styles/Theme";
 function Skills() {
   return (
     <Container>
-      <SkillsStyle>
+      <SkillsStyle id ="project">
         <SectionHeader>The services i offer:</SectionHeader>
         <SkillBox></SkillBox>
       </SkillsStyle>

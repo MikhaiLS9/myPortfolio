@@ -9,7 +9,7 @@ import Text from "../../styles/SectionText";
 
 function About() {
   return (
-    <SectionAbout>
+    <SectionAbout id="about">
       <Container>
         <SectionHeader>About me:</SectionHeader>
         <Text>

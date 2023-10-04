@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import Theme from "../../../styles/Theme";
+import Theme from "../../../../styles/Theme";
 
 const items = [
   {
@@ -20,9 +20,10 @@ const items = [
   },
 ];
 
-function Menu() {
+function HeaderMenu() {
   return (
     <StyleMenu>
+      <Logo>Jayjay Dinero</Logo>
       <Style>
         {items.map((item: { href: string; title: string }) => (
           <a href={`#${item.href}`}>{item.title}</a>
@@ -32,8 +33,24 @@ function Menu() {
   );
 }
 const StyleMenu = styled.nav`
-  display: flex;
-  width:150px;
+  display: inline-flex;
+  padding: 0px 160px;
+  align-items: flex-start;
+  gap: 394px;
+`;
+
+const Logo = styled.span`
+  color: ${Theme.color.accent};
+  font-size: 28px;
+  font-weight: 600;
+
+  @media (max-width: 726px) {
+    font-size: 25px;
+  }
+
+  @media (max-width: 526px) {
+    font-size: 22px;
+  }
 `;
 const Style = styled.ul`
   display: flex;
@@ -70,4 +87,4 @@ const Style = styled.ul`
 
   // }
 `;
-export default Menu;
+export default HeaderMenu;
