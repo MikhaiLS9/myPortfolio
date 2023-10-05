@@ -56,7 +56,7 @@ function SkillBox() {
   return (
     <GridConteiner>
       {skills.map((skill) => (
-        <GridItems>
+        <GridItems key={skill.id}>
           <img src={skill.icon} alt={skill.title} />
           <TitleStyle>{skill.title}</TitleStyle>
           <Text>{skill.description}</Text>

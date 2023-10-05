@@ -9,7 +9,6 @@ function Header() {
   return (
     <StyleMenu>
       <Container>
-        {/* <Logo>Jayjay Dinero</Logo> */}
         <FlexWrapper justify="space-around" align="center" wrap="wrap">
           <HeaderMenu />
         </FlexWrapper>
@@ -34,15 +33,8 @@ const StyleMenu = styled.header`
   padding: 19px 160px;
   justify-content: space-around;
   align-items: center;
-  gap: 394px;
+  // gap: 394px;
 
-  @media (max-width: 780px) {
-    gap: 150px;
-  }
-
-  @media (max-width: 360px) {
-    gap: 50px;
-  }
 `;
 
 export default Header;

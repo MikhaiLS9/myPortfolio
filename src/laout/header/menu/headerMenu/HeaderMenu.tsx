@@ -26,7 +26,7 @@ function HeaderMenu() {
       <Logo>Jayjay Dinero</Logo>
       <Style>
         {items.map((item: { href: string; title: string }) => (
-          <a href={`#${item.href}`}>{item.title}</a>
+          <a href={`#${item.href}`} key={item.title}>{item.title}</a>
         ))}
       </Style>
     </StyleMenu>
@@ -35,8 +35,17 @@ function HeaderMenu() {
 const StyleMenu = styled.nav`
   display: inline-flex;
   padding: 0px 160px;
-  align-items: flex-start;
+  align-items: center;
   gap: 394px;
+
+  @media (max-width: 1200px) {
+    gap: 100px;
+    padding: 5px;
+  }
+
+  @media (max-width: 950px) {
+    gap: 50px;
+  }
 `;
 
 const Logo = styled.span`
@@ -44,12 +53,12 @@ const Logo = styled.span`
   font-size: 28px;
   font-weight: 600;
 
-  @media (max-width: 726px) {
+  @media (max-width: 850px) {
     font-size: 25px;
   }
 
-  @media (max-width: 526px) {
-    font-size: 22px;
+  @media (max-width: 450px) {
+    font-size: 18px;
   }
 `;
 const Style = styled.ul`
@@ -57,21 +66,24 @@ const Style = styled.ul`
   max-width: 450px;
   justify-content: space-between;
   align-items: flex-start;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   gap: 25px;
 
-  a {
-    font-size: 18px;
-    font-weight: 600;
+  font-size: 18px;
+  font-weight: 600;
 
-    @media (max-width: 726px) {
-      font-size: 15px;
-    }
-
-    @media (max-width: 526px) {
-      font-size: 12px;
-    }
+  @media (max-width: 850px) {
+    flex-wrap: wrap;
+    font-size: 15px;
+    gap: 20px;
+    padding: 5px;
   }
+
+  @media (max-width: 450px) {
+    font-size: 12px;
+    gap: 5px;
+  }
+
   a:link {
     color: ${Theme.color.fonst};
   }
@@ -82,9 +94,5 @@ const Style = styled.ul`
   a:active {
     color: ${Theme.color.accent};
   }
-
-  // @amedia: ${Theme.media.tablet} {
-
-  // }
 `;
 export default HeaderMenu;
