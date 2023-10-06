@@ -23,15 +23,19 @@ const items = [
 function HeaderMenu() {
   return (
     <StyleMenu>
-      <Logo>Jayjay Dinero</Logo>
+      <Logo href="/about">Jayjay Dinero</Logo>
       <Style>
         {items.map((item: { href: string; title: string }) => (
-          <a href={`#${item.href}`} key={item.title}>{item.title}</a>
+          <NavLink href={`#${item.href}`} key={item.title}>{item.title}</NavLink>
         ))}
       </Style>
     </StyleMenu>
   );
 }
+const NavLink = styled.a`
+
+`
+
 const StyleMenu = styled.nav`
   display: inline-flex;
   padding: 0px 160px;
@@ -48,7 +52,7 @@ const StyleMenu = styled.nav`
   }
 `;
 
-const Logo = styled.span`
+const Logo = styled.a`
   color: ${Theme.color.accent};
   font-size: 28px;
   font-weight: 600;

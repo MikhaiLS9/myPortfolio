@@ -21,10 +21,10 @@ function Main() {
               seamless web experiences for end-users.
             </Text>
             <StyleLink>
-              <Link>
+              <Link href="#about">
                 About me <img src={User} alt="User" />
               </Link>
-              <Link>
+              <Link href="#project">
                 Projects <img src={Eye} alt="User" />
               </Link>
             </StyleLink>

@@ -1,14 +1,51 @@
 import styled from "styled-components";
 import Theme from "../../../styles/Theme";
+import React, { useState } from "react";
 
 function Contact() {
+  const [inputValueOne, setInputValueOne] = useState("");
+  const [inputValueTwo, setInputValueTwo] = useState("");
+  const [inputValueThree, setInputValueThree] = useState("");
+
+  const handleInputChange = (e: {
+    target: { value: React.SetStateAction<string> };
+  }) => {
+    setInputValueOne(e.target.value);
+  };
+  const handleInputChangeTwo = (e: {
+    target: { value: React.SetStateAction<string> };
+  }) => {
+    setInputValueTwo(e.target.value);
+  };
+  const handleInputChangeThree = (e: {
+    target: { value: React.SetStateAction<string> };
+  }) => {
+    setInputValueThree(e.target.value);
+  };
+  const handleSubmit = () => {
+    console.log(inputValueOne, inputValueTwo, inputValueThree);
+  };
+
   return (
     <SectionStyle>
       <StyleText>Contact me, let’s make magic together</StyleText>
-      <Field placeholder="Name:" />
-      <Field placeholder="Email:" />
-      <Field as={"textarea"} placeholder="Message:" />
-      <Button>Send</Button>
+      <Field
+        value={inputValueOne}
+        onChange={handleInputChange}
+        placeholder="Name:"
+      />
+      <Field
+        value={inputValueTwo}
+        onChange={handleInputChangeTwo}
+        placeholder="Email:"
+      />
+      <Field
+        value={inputValueThree}
+        onChange={handleInputChangeThree}
+        as={"textarea"}
+        placeholder="Message:"
+      />
+      <Button onClick={handleSubmit}>Send</Button>
     </SectionStyle>
   );
 }
@@ -43,10 +80,9 @@ const Field = styled.input`
   font-weight: 500;
   line-height: normal;
 
-  @media (max-width: 726px){
+  @media (max-width: 726px) {
     max-width: 250px;
   }
-
 `;
 
 const Button = styled.button`

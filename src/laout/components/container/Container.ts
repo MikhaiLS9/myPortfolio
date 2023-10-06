@@ -6,7 +6,6 @@ width: 100%;
 min-width: 340px;
 padding: 0 15px;
 margin: 0 auto;
-border: 1px solid red;
 height: 100%;
 
 @media (max-width: 726px) {
