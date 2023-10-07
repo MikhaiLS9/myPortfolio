@@ -3,45 +3,45 @@ import Theme from "../../../styles/Theme";
 import React, { useState } from "react";
 
 function Contact() {
-  const [inputValueOne, setInputValueOne] = useState("");
-  const [inputValueTwo, setInputValueTwo] = useState("");
-  const [inputValueThree, setInputValueThree] = useState("");
+  const [inputValuesOne, setInputValuesOne] = useState({
+    name: "",
+    email: "",
+    messeage: "",
+  });
+  const [inputValuesTwo, setInputValueTwo] = useState("");
 
-  const handleInputChange = (e: {
-    target: { value: React.SetStateAction<string> };
-  }) => {
-    setInputValueOne(e.target.value);
+  const handleInputChange = (
+    e: React.ChangeEvent<HTMLInputElement>,
+    field: string
+  ) => {
+    setInputValuesOne({ ...inputValuesOne, [field]: e.target.value });
   };
   const handleInputChangeTwo = (e: {
     target: { value: React.SetStateAction<string> };
   }) => {
     setInputValueTwo(e.target.value);
   };
-  const handleInputChangeThree = (e: {
-    target: { value: React.SetStateAction<string> };
-  }) => {
-    setInputValueThree(e.target.value);
-  };
   const handleSubmit = () => {
-    console.log(inputValueOne, inputValueTwo, inputValueThree);
+    inputValuesOne["messeage"] = inputValuesTwo;
+    console.log(inputValuesOne);
   };
 
   return (
     <SectionStyle>
       <StyleText>Contact me, let’s make magic together</StyleText>
       <Field
-        value={inputValueOne}
-        onChange={handleInputChange}
+        value={inputValuesOne.name}
+        onChange={(e) => handleInputChange(e, "name")}
         placeholder="Name:"
       />
       <Field
-        value={inputValueTwo}
-        onChange={handleInputChangeTwo}
+        value={inputValuesOne.email}
+        onChange={(e) => handleInputChange(e, "email")}
         placeholder="Email:"
       />
       <Field
-        value={inputValueThree}
-        onChange={handleInputChangeThree}
+        value={inputValuesTwo}
+        onChange={handleInputChangeTwo}
         as={"textarea"}
         placeholder="Message:"
       />
