@@ -12,7 +12,7 @@ import Dribbble from "../components/icon_svg/vuesax/vuesax/dribbble.svg";
 
 function Footer() {
   return (
-    <StyleContact id="contact"> 
+    <StyleContact id="contact">
       <Container>
         <FlexWrapper justify="space-around">
           <StyleConnect>
@@ -33,7 +33,7 @@ function Footer() {
               </a>
             </StyledImage>
           </StyleConnect>
-          <Contact></Contact>
+          <Contact />
         </FlexWrapper>
       </Container>
     </StyleContact>

@@ -5,6 +5,7 @@ import About from "./laout/about/About";
 import Skills from "./laout/skills/Skills";
 import Projects from "./laout/myprojects/Projects";
 import Footer from "./laout/footer/Footer";
+import Copyrigth from "./laout/footer/copyright/Copyright";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Skills />
       <Projects />
       <Footer />
+      <Copyrigth/>
     </div>
   );
 }
