@@ -32,10 +32,13 @@ const StyledWork = styled.div`
   align-content: center;
   justify-content: center;
 
-  @media (max-width: 360px) {
+  @media (max-width: 850px) {
     display: flex;
-    max-width: 300px;
     justify-content: center;
+  }
+
+  @media (max-width: 360px) {
+    max-width: 300px;
     align-content: space-around;
     align-items: center;
   }
@@ -65,6 +68,10 @@ const Titel = styled.h3`
 const StyleLink = styled.div`
   display: flex;
   gap: 18px;
+
+  @media (max-width: 360px) {
+    gap: 0px;
+  }
 `;
 const Link = styled.a`
   display: flex;
@@ -74,6 +81,7 @@ const Link = styled.a`
   justify-content: center;
   align-items: center;
   gap: 5px;
+  margin: 10px;
 
   box-sizing: border-box;
   font-size: 16px;
@@ -81,6 +89,7 @@ const Link = styled.a`
 
   @media (max-width: 360px) {
     max-width: 130px;
+    gap: 0px;
   }
 
   :first-child {

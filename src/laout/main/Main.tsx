@@ -100,7 +100,7 @@ const Link = styled.a`
     align-items: flex-start;
     align-items: center;
     gap: 5px;
-
+    color: ${Theme.color.fonst};
     border-radius: 8px;
     background: ${Theme.color.accent};
   }
@@ -110,7 +110,7 @@ const Link = styled.a`
   align-items: center;
   gap: 5px;
   cursor: pointer;
-
+  color: ${Theme.color.accent};
   border: solid ${Theme.color.accent};
   border-radius: 8px;
   font-size: 16px;

@@ -9,7 +9,7 @@ function Header() {
   return (
     <StyleMenu>
       <Container>
-        <FlexWrapper justify="space-around" align="center" wrap="wrap">
+        <FlexWrapper justify="space-between" align="center" wrap="wrap">
           <HeaderMenu />
         </FlexWrapper>
       </Container>
@@ -21,7 +21,7 @@ const StyleMenu = styled.header`
   top: 0;
   background-color: ${Theme.color.primaryBg};
   color: ${Theme.color.fonst};
-  padding: 19px 160px;
+  // padding: 19px 160px;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -30,7 +30,7 @@ const StyleMenu = styled.header`
   color: ${Theme.color.primaryBg};
   display: flex;
   align-items: center;
-  padding: 19px 160px;
+  // padding: 19px 160px;
   justify-content: space-around;
   align-items: center;
   // gap: 394px;

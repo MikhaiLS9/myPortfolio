@@ -15,6 +15,7 @@ const FlexWrapper = styled.div<FlexWrapperPropsType>`
   height: 100%;
   @media (max-width: 780px) {
     flex-direction: column;
+    align-content: center;
   }
 `;
 export default FlexWrapper;

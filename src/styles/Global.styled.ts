@@ -1,4 +1,4 @@
-import { createGlobalStyle } from "styled-components"
+import { createGlobalStyle } from "styled-components";
 import Theme from "./Theme";
 
 const GlobalStyle = createGlobalStyle`
@@ -9,7 +9,20 @@ const GlobalStyle = createGlobalStyle`
   padding: 0;
   box-sizing: border-box;
 }
+
+img {
+  object-fit: cover;
+}
+
 body {
+  * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box
+  }
+  a{
+    white-space: nowrap;
+  }
     background-color: #1A1A29;
     color: ${Theme.color.fonst};
     font-family:'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',

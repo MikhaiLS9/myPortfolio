@@ -23,7 +23,10 @@ function Contact() {
   };
   const handleSubmit = () => {
     inputValuesOne["messeage"] = inputValuesTwo;
-    console.log(inputValuesOne);
+
+    alert(
+      ` Привет: ${inputValuesOne.name}\n Твой емаил ${inputValuesOne.email}\n Cообщение: ${inputValuesOne.messeage}`
+    );
   };
 
   return (
@@ -67,18 +70,21 @@ const SectionStyle = styled.section`
 `;
 const Field = styled.input`
   width: 472px;
-  height: 62px;
+  height: 30px;
   border-radius: 8px;
-  opacity: 0.11;
-  background: #f5f5f5;
+  background: #31313f;
   padding: 16px 19px;
 
-  color: ${Theme.color.primaryBg};
+  color: #ffffff;
   font-family: Poppins;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+
+  &::placeholder{
+    opacity: 0.5;
+  }
 
   @media (max-width: 726px) {
     max-width: 250px;

@@ -26,7 +26,7 @@ function About() {
           </Text>
         </FlexWrapper>
         
-        <FlexWrapper wrap="wrap" justify="space-around">
+        <FlexWrapper wrap="wrap" justify="space-between">
           <SkillsBox iconId="pen" title="UI & UX DESIGNING" />
           <SkillsBox iconId="code" title="WEB DEVELOPMENT" />
           <SkillsBox iconId="android" title="MOBILE DEVELOPMENT" />

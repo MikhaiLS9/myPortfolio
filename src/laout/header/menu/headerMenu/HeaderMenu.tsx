@@ -38,9 +38,11 @@ const NavLink = styled.a`
 
 const StyleMenu = styled.nav`
   display: inline-flex;
-  padding: 0px 160px;
+  // padding: 0px 160px;
   align-items: center;
-  gap: 394px;
+  gap: 701px;
+  height: 80px;
+  white-space: nowrap;
 
   @media (max-width: 1200px) {
     gap: 100px;
