@@ -67,6 +67,7 @@ const Titel = styled.h3`
 `;
 const StyleLink = styled.div`
   display: flex;
+  width: 100%;
   gap: 18px;
 
   @media (max-width: 360px) {
@@ -77,7 +78,7 @@ const Link = styled.a`
   display: flex;
   width: 144px;
   height: 43px;
-  padding: 12px 10px;
+  padding: 12px;
   justify-content: center;
   align-items: center;
   gap: 5px;
@@ -103,7 +104,7 @@ const Link = styled.a`
     display: flex;
     width: 145px;
     height: 43px;
-    padding: 12px 25px;
+    padding: 12px;
     justify-content: center;
     align-items: center;
     gap: 6px;

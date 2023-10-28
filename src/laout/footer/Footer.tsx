@@ -14,7 +14,7 @@ function Footer() {
   return (
     <StyleContact id="contact">
       <Container>
-        <FlexWrapper justify="space-around">
+        <FlexWrapper justify="space-around" align="flex-start">
           <StyleConnect>
             <SectionHeader>Connect with me:</SectionHeader>
             <Text>Satisfied with me? Please contact me</Text>
@@ -43,7 +43,7 @@ function Footer() {
 const StyleConnect = styled.div`
   display: flex;
   flex-direction: column;
-  padding: 20px;
+  align-items: flex-start;
 `;
 
 const StyleContact = styled.footer`
@@ -53,6 +53,7 @@ const StyleContact = styled.footer`
   min-height: 70vh;
   justify-content: space-evenly;
   display: flex;
+  align-items: center;
   padding: 20px;
 `;
 const StyledImage = styled.span`

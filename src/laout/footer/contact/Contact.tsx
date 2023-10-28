@@ -8,22 +8,14 @@ function Contact() {
     email: "",
     messeage: "",
   });
-  const [inputValuesTwo, setInputValueTwo] = useState("");
 
   const handleInputChange = (
-    e: React.ChangeEvent<HTMLInputElement>,
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
     field: string
   ) => {
     setInputValuesOne({ ...inputValuesOne, [field]: e.target.value });
   };
-  const handleInputChangeTwo = (e: {
-    target: { value: React.SetStateAction<string> };
-  }) => {
-    setInputValueTwo(e.target.value);
-  };
   const handleSubmit = () => {
-    inputValuesOne["messeage"] = inputValuesTwo;
-
     alert(
       ` Привет: ${inputValuesOne.name}\n Твой емаил ${inputValuesOne.email}\n Cообщение: ${inputValuesOne.messeage}`
     );
@@ -32,23 +24,27 @@ function Contact() {
   return (
     <SectionStyle>
       <StyleText>Contact me, let’s make magic together</StyleText>
-      <Field
-        value={inputValuesOne.name}
-        onChange={(e) => handleInputChange(e, "name")}
-        placeholder="Name:"
-      />
-      <Field
-        value={inputValuesOne.email}
-        onChange={(e) => handleInputChange(e, "email")}
-        placeholder="Email:"
-      />
-      <Field
-        value={inputValuesTwo}
-        onChange={handleInputChangeTwo}
-        as={"textarea"}
-        placeholder="Message:"
-      />
-      <Button onClick={handleSubmit}>Send</Button>
+      <StyledForm action="">
+        <Field
+          value={inputValuesOne.name}
+          onChange={(e) => handleInputChange(e, "name")}
+          placeholder="Name:"
+        />
+        <Field
+          value={inputValuesOne.email}
+          onChange={(e) => handleInputChange(e, "email")}
+          placeholder="Email:"
+        />
+        <Field
+          value={inputValuesOne.messeage}
+          onChange={(e: React.ChangeEvent<HTMLTextAreaElement>) =>
+            handleInputChange(e, "messeage")
+          }
+          as={"textarea"}
+          placeholder="Message:"
+        />
+        <Button onClick={handleSubmit}>Send</Button>
+      </StyledForm>
     </SectionStyle>
   );
 }
@@ -59,13 +55,33 @@ const StyleText = styled.p`
 const SectionStyle = styled.section`
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 10px;
   margin: 0 auto;
   padding: 9px;
+  width: 100%;
+
   textarea {
     width: 472px;
     height: 98px;
     resize: none;
+
+    @media (max-width: 726px) {
+      width: 100%;
+    }
+  }
+`;
+
+const StyledForm = styled.form`
+  display: flex;
+  flex-direction: column;
+
+  gap: 10px;
+  margin: 0 auto;
+  padding: 9px;
+
+  @media (max-width: 726px) {
+    width: 100%;
   }
 `;
 const Field = styled.input`
@@ -82,12 +98,12 @@ const Field = styled.input`
   font-weight: 500;
   line-height: normal;
 
-  &::placeholder{
+  &::placeholder {
     opacity: 0.5;
   }
 
   @media (max-width: 726px) {
-    max-width: 250px;
+    width: 100%;
   }
 `;
 

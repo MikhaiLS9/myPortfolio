@@ -12,7 +12,7 @@ function Main() {
   return (
     <StyledMain id="main">
       <Container>
-        <FlexWrapper justify="center" align="center">
+        <FlexWrapper justify="center" align="center" gap ='30px'>
           <About>
             <SectionHeader>Hello, i’m</SectionHeader>
             <MyName>Jayjay D. Dinero</MyName>
@@ -51,6 +51,7 @@ const StyledMain = styled.div`
   }
 `;
 const MyName = styled.h1`
+  padding: 10px;
   font-weight: 600;
   font-size: 52px;
 
@@ -61,6 +62,7 @@ const MyName = styled.h1`
 
 const About = styled.div`
   display: flex;
+  width: 100%;
   flex-direction: column;
   @media (max-width: 850px) {
     align-items: center;
@@ -69,13 +71,14 @@ const About = styled.div`
 
 const StyleLink = styled.div`
   display: flex;
-  box-sizing: border;
+  padding: 10px;
   gap: 20px;
 
   @media (max-width: 360px) {
-    max-width: 316px;
+    margin-bottom: 15px;
+    padding: 10px;
+    max-width: 350px;
     max-height: 70px;
-    padding: 5px 14px;
     justify-content: flex-end;
   }
 `;

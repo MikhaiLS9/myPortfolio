@@ -1,4 +1,3 @@
-import "./App.css";
 import Header from "./laout/header/Header";
 import Main from "./laout/main/Main";
 import About from "./laout/about/About";
